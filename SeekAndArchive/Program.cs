@@ -2,7 +2,7 @@
 
 namespace SeekAndArchive
 {
-    internal class Program
+    public class Program
     {
         public static void Main(string[] args)
         {
@@ -16,15 +16,19 @@ namespace SeekAndArchive
             switch (chosenMenu)
             {
                 case "1":
+                    Console.Clear();
                     Search();
                     break;
                 case "2":
+                    Console.Clear();
                     ShowSearchHistory();
                     break;
                 case "3":
+                    Console.Clear();
                     Environment.Exit(0);
                     break;
                 default:
+                    Console.Clear();
                     Console.WriteLine("Invalid menu option, choose again.");
                     PrintMenu();
                     SelectMenu();
